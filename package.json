@@ -1,0 +1,15 @@
+{
+  "name": "com.gameframe.simplejson",
+  "version": "1.0.0",
+  "displayName": "SimpleJSON",
+  "description": "Package for creating packages!",
+  "repositoryName": "SimpleJSON",
+  "author": {
+    "name": "Cory Leach",
+    "email": "cory.leach@gmail.com",
+    "url": "https://github.com/coryleach",
+    "github": "coryleach",
+    "twitter": "coryleach"
+  },
+  "type": "library"
+}

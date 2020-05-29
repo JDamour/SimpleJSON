@@ -78,59 +78,55 @@ namespace SimpleJSON.Test
         }";
 
         [Test]
-        [ExpectedException(typeof (Exception))]
         public void Parse_EqualsInsteadOfColon_ThrowsException()
         {
             // arrange
             // nothing
 
             // act
-            JSON.Parse(JsonStringEqualsInsteadOfColon);
-
-            // assert
-            Assert.Fail("Should have thrown an exception");
+            Assert.Throws<Exception>(() =>
+            {
+                JSON.Parse(JsonStringEqualsInsteadOfColon);
+            });
         }
 
         [Test]
-        [ExpectedException(typeof (Exception))]
         public void Parse_MissingClosingBracket_ThrowsException()
         {
             // arrange
             // nothing
 
             // act
-            JSON.Parse(JsonStringMissingClosingBracket);
-
-            // assert
-            Assert.Fail("Should have thrown an exception");
+            Assert.Throws<Exception>(() =>
+            {
+                JSON.Parse(JsonStringMissingClosingBracket);
+            });
         }
 
         [Test]
-        [ExpectedException(typeof (Exception))]
         public void Parse_MissingOpeningBracket_ThrowsException()
         {
             // arrange
             // nothing
 
             // act
-            JSON.Parse(JsonStringMissingOpeningBracket);
-
-            // assert
-            Assert.Fail("Should have thrown an exception");
+            Assert.Throws<Exception>(() =>
+            {
+                JSON.Parse(JsonStringMissingOpeningBracket);
+            });
         }
 
         [Test]
-        [ExpectedException(typeof (Exception))]
         public void Parse_MissingComma_ThrowsException()
         {
             // arrange
             // nothing
 
             // act
-            JSON.Parse(JsonStringMissingComma);
-
-            // assert
-            Assert.Fail("Should have thrown an exception");
+            Assert.Throws<Exception>(() =>
+            {
+                JSON.Parse(JsonStringMissingComma);
+            });
         }
 
         [Test]
@@ -342,17 +338,15 @@ namespace SimpleJSON.Test
         }
 
         [Test]
-        [ExpectedException(typeof (NullReferenceException))]
         public void Parse_Null_ThrowsException()
         {
             // arrange
             // nothing
-
             // act
-            JSON.Parse(null);
-
-            // assert
-            // Expectes ArgumentNullException
+            Assert.Throws<NullReferenceException>(() =>
+            {
+                JSON.Parse(null);
+            });
         }
 
         [Test]
