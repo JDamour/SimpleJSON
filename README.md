@@ -8,7 +8,7 @@
 
 A C# json reader/writer which is Unity3D compatible based on http://wiki.unity3d.com/index.php/SimpleJSON  
 The official Github repo for this script can be found at https://github.com/Bunny83/SimpleJSON/blob/master/SimpleJSON.cs  
-Original improvements from https://github.com/HenrikPoulsen/SimpleJSON  
+Improvements from https://github.com/HenrikPoulsen/SimpleJSON  
 This repository is a fork that has been updated for direct import with the Unity PackageManager.
 
 ## Quick Package Install
